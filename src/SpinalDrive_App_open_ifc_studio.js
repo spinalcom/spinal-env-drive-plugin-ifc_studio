@@ -1,11 +1,11 @@
 /**
- * SpinalDrive_App_FileExplorer_svf_viewer
+ * SpinalDrive_App_open_ifc_studio
  * @extends {SpinalDrive_App}
  */
-class SpinalDrive_App_FileExplorer_svf_viewer extends SpinalDrive_App {
+class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
   /**
-   * Creates an instance of SpinalDrive_App_FileExplorer_svf_viewer.
-   * @memberof SpinalDrive_App_FileExplorer_svf_viewer
+   * Creates an instance of SpinalDrive_App_open_ifc_studio.
+   * @memberof SpinalDrive_App_open_ifc_studio
    */
   constructor() {
     super(
@@ -21,7 +21,7 @@ class SpinalDrive_App_FileExplorer_svf_viewer extends SpinalDrive_App {
    * method to handle the selection
    *
    * @param {any} element
-   * @memberof SpinalDrive_App_FileExplorer_svf_viewer
+   * @memberof SpinalDrive_App_open_ifc_studio
    */
   action(obj) {
     let authService = obj.scope.injector.get("authService");
@@ -42,7 +42,7 @@ class SpinalDrive_App_FileExplorer_svf_viewer extends SpinalDrive_App {
    * method to know if the app is needed to be shown.
    * @param {Object} d node of the tree selectionned
    * @returns {boolean}
-   * @memberof SpinalDrive_App_FileExplorer_svf_viewer
+   * @memberof SpinalDrive_App_open_ifc_studio
    */
   is_shown(d) {
     if (d && d.file && d.file._server_id) {
@@ -60,4 +60,4 @@ class SpinalDrive_App_FileExplorer_svf_viewer extends SpinalDrive_App {
   }
 }
 
-module.exports.FileExplorerSvfViewer = SpinalDrive_App_FileExplorer_svf_viewer;
+module.exports.SpinalDriveAppOpenIfcStudio = SpinalDrive_App_open_ifc_studio;

@@ -30,12 +30,11 @@ function concat_lib(lib) {
     module.exports[key] = lib[key];
   }
 }
-concat_lib(require("./src/SpinalDrive_App_export_ifc"));
+concat_lib(require("./src/SpinalDrive_App_open_ifc_studio").SpinalDriveAppOpenIfcStudio);
 
 window.spinalDrive_Env.add_applications(
-  "FileExplorer",
-  new module.exports.FileExplorerExportIfc()
+  "OpenIfcStudio",
+  new module.exports.SpinalDriveAppOpenIfcStudio()
 );
-window.spinalDrive_Env.context_file_exp_app_icon["BIM Project"] =
-  "location_city";
+
 window.spinalDrive_Env.context_file_exp_app_icon["Ifc twin"] = "location_city";
