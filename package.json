@@ -1,0 +1,24 @@
+{
+  "name": "spinal-env-drive-plugin-ifc_studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinalcom/spinal-env-drive-plugin-ifc_studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spinalcom/spinal-env-drive-plugin-ifc_studio/issues"
+  },
+  "homepage": "https://github.com/spinalcom/spinal-env-drive-plugin-ifc_studio#readme",
+  "dependencies": {
+    "spinal-core-connectorjs": "git+https://github.com/spinalcom/spinal-core-connectorjs.git",
+    "spinal-env-drive-core": "git+https://github.com/spinalcom/spinal-env-drive-core.git"
+  }
+}
