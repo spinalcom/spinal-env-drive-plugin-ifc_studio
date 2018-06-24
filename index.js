@@ -30,7 +30,7 @@ function concat_lib(lib) {
     module.exports[key] = lib[key];
   }
 }
-concat_lib(require("./src/SpinalDrive_App_open_ifc_studio").SpinalDriveAppOpenIfcStudio);
+concat_lib(require("./src/SpinalDrive_App_open_ifc_studio"));
 
 window.spinalDrive_Env.add_applications(
   "OpenIfcStudio",

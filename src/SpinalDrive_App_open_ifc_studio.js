@@ -1,3 +1,6 @@
+require("spinal-core-connectorjs");
+var SpinalDrive_App = require("spinal-env-drive-core").SpinalDrive_App;
+
 /**
  * SpinalDrive_App_open_ifc_studio
  * @extends {SpinalDrive_App}
@@ -9,7 +12,7 @@ class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
    */
   constructor() {
     super(
-      "OpenSvfFileExplorer",
+      "openIfcFileExplorer",
       "Open with Ifc Studio",
       10,
       "location_city",
@@ -50,8 +53,8 @@ class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
       if (
         file &&
         file instanceof File &&
-        file._info.model_type &&
-        (file._info.model_type.get() === "Ifc twin")
+        file._info.model_type
+        //&& (file._info.model_type.get() === "Ifc twin")
       ) {
         return true;
       }
