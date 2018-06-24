@@ -33,7 +33,7 @@ function concat_lib(lib) {
 concat_lib(require("./src/SpinalDrive_App_open_ifc_studio"));
 
 window.spinalDrive_Env.add_applications(
-  "OpenIfcStudio",
+  "FileExplorer",
   new module.exports.SpinalDriveAppOpenIfcStudio()
 );
 

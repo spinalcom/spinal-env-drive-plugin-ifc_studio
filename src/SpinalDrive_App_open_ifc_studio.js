@@ -13,10 +13,10 @@ class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
   constructor() {
     super(
       "openIfcFileExplorer",
-      "Open with Ifc Studio",
+      "Open with IFC Studio",
       10,
-      "location_city",
-      "Open the Ifc Studio"
+      "dvr",
+      "Open the IFC Studio"
     );
     this.order_priority = 5;
   }
@@ -36,7 +36,7 @@ class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
     }
     path += "/" + obj.file.name;
     let myWindow = window.open("", "");
-    let location = "/html/ifcstudio/" + btoa(path);
+    let location = "/html/ifc_studio/index.html#!/home/" + btoa(path);
     myWindow.document.location = location;
     myWindow.focus();
   }
@@ -53,8 +53,8 @@ class SpinalDrive_App_open_ifc_studio extends SpinalDrive_App {
       if (
         file &&
         file instanceof File &&
-        file._info.model_type
-        //&& (file._info.model_type.get() === "Ifc twin")
+        file._info.model_type &&
+        (file._info.model_type.get() === "Ifc twin")
       ) {
         return true;
       }
